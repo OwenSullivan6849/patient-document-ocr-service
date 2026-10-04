@@ -1,0 +1,2 @@
+"""Patient document OCR example."""
+

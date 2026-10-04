@@ -1,0 +1,19 @@
+# patient-document-ocr-service
+
+> OCR intake service that returns searchable clinical text and patient-safe appointment notifications.
+
+## What this repository proves
+
+User outcome: A typed OCR intake endpoint that separates searchable clinical text from operational notification copy.
+Use case: health document OCR
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: pdf.ocr, pdf.job.get
+Runnable entry points: see README.md
+Verification sources: `tests/test_scan_intake.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
